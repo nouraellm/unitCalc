@@ -1,0 +1,17 @@
+{
+    "name": "put/vendor",
+    "description": "unitCalc a simple calculator project for unit testing",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "EL ALLAM Noura",
+            "email": "nouraellm@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "classmap":["src/Math"]
+    }
+}
