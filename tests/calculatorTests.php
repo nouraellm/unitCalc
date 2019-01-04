@@ -1,6 +1,7 @@
 <?php
 
 use Math\Calculator;
+use WebService\registerMock;
 
 /**
  * Registering composer
@@ -23,7 +24,7 @@ class CalculatorTests extends \PHPUnit\Framework\TestCase
 	 */
 	public function setUp()
 	{
-		$this->calculator = new Calculator();
+		$this->calculator = new Calculator(new registerMock());
 	}
 
 	/**
@@ -65,5 +66,14 @@ class CalculatorTests extends \PHPUnit\Framework\TestCase
 		$geniune = $this->calculator->division(10,5);
 		$this->assertEquals($anticipate, $geniune);
 	}
+
+	/**
+	 * @test
+	 * @expectedException \InvalidArgumentException
+	 */
+	public function dividedByZero_test_exception()
+	{
+        $this->calculator->division(13, 0);
+    }
 
 }

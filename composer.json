@@ -1,5 +1,5 @@
 {
-    "name": "put/vendor",
+    "name": "unitCalc/vendor",
     "description": "unitCalc a simple calculator project for unit testing",
     "license": "MIT",
     "authors": [
@@ -12,6 +12,8 @@
         "phpunit/phpunit": "^7.5"
     },
     "autoload": {
-        "classmap":["src/Math"]
-    }
+          "psr-4": {
+              "": "src/"
+           }
+     }
 }
