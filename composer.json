@@ -15,5 +15,8 @@
           "psr-4": {
               "": "src/"
            }
-     }
+     },
+     "scripts": {
+        "run-test": ["./vendor/bin/phpunit tests/calculatorTests.php"]
+    }
 }
