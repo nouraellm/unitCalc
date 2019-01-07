@@ -18,5 +18,8 @@
      },
      "scripts": {
         "run-test": ["./vendor/bin/phpunit tests/calculatorTests.php"]
+    },
+    "config":{
+      "optimize-autoloader":true
     }
 }
